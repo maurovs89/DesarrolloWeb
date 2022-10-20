@@ -1,0 +1,139 @@
+.box {
+    height: 40px;
+    width: 80px;
+    /*Para redonde la puntas**/
+    border-radius: 6px;
+    /*Centrar elementos*/
+    margin: 50px auto;
+}
+
+.box-1 {
+    background-color: mediumaquamarine;
+}
+
+.box-2 {
+    background-color: blueviolet;
+    /*para que trnasisiton funcione hay q agregar dos valores en la propiedad /all tiempo /*/
+    transition: all 2s;
+}
+
+/* Transformación: Quiero que al pasar el maouse por encima de cualq de los box, esclae o crezca 4 veces su tamaño.
+Y solo en el segundo box tenga transición*/
+
+/* :hover cambiar el estado de un elemento HTML al pasar el mouse por encima, agregandole, las propiedades que este incluya*/
+
+.box:hover {
+    /*Transform inclute scale  y entre parentesis agregamos un numero de cuanto queremos que escale*/
+    transform: scale(4);
+}
+
+/* . circle1, .circle2, .circle3, .circle4 {
+
+}*/
+
+.container-circle div {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.circle1 {
+    background-color: mediumaquamarine;
+    /*la curca de velocidad*/
+    transition: all 1.5s ease;
+}
+
+.circle2 {
+    background-color: mediumblue;
+    transition: all 1.5s ease-in;
+}
+
+.circle3 {
+    background-color: green;
+    transition: all 1.5s ease-in-out;
+}
+
+.circle4 {
+    background-color: red;
+    transition: all 1.5s ease-out ;
+}
+
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4 {
+    transform: translateX(200px);
+}
+
+.square-uno, .square-dos {
+    border-radius: 4px;
+    height: 150px;
+    width: 150px;
+    margin: 100px;
+    position: absolute;
+}
+
+.square-uno {
+    background-color: teal;
+
+}
+
+.square-dos {
+    background-color: steelblue;
+}
+
+.square-dos:hover {
+    transform: translate(20px, 20px);
+    transition: all 0.8s;
+    background-color: transparent;
+}
+
+.combinado {
+    background-color: violet;
+    height: 75px;
+    width: 75px;
+    margin: 50px auto;
+}
+
+.combinado:hover {
+    transform: rotate(90deg) scale(2);
+    transition: all 1.5s;
+    /*Prefijos*/
+    -webkit-transform: rotate(90deg) scale(2);
+}
+
+/*Control sobre los frames o fotogramas de la animacion*/
+
+.animacion {
+    width: 120px;
+    height: 120px;
+    margin: 50px auto;
+    background-color: yellow;
+}
+
+.animacion:hover {
+    /*animacion con un nombre y con una duracion*/
+    animation: changeColor 4s;
+
+}
+
+/*Regla de CSS Keyframes*/
+
+@keyframes changeColor {
+    0% {
+        background-color: violet;
+    }
+
+    15% {
+        border-radius: 50%;
+    }
+
+    50% {
+        width: 400px;
+    }
+
+    100% {
+        background-color: teal;
+    }
+}

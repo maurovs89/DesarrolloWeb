@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, p{
+    background-color: #DDE0E3;
+}
+
+em {
+    background-color: #B2D6FF;
+}
+
+#social a {
+    text-decoration: none;
+}
+
+header nav ul {
+    background-color: #B2D6FF;
+}
+
+/* .enlace {
+    text-decoration: none;
+} */
+
+/* p {
+    background-color: #DDE0E3;
+} */
+
+/* Box model */
+/* Contenido */
+/* Relleno o Padding - Es el espacio entre el contenido de la caja y el borde */
+
+.box-model {
+    /* Pixeles px - 60px a cada lado */
+    /* padding: 60px; */
+    /* Los cuatro lados */
+    /* padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-left: 0; */
+    /* padding: vertical / horizontales */
+    /* padding: 40px 80px; */
+    /* Sentido horario */
+     padding: 20px 60px 100px 0;
+    /* padding-bottom: 40px; */
+    /* padding: 40px 36px 10px; */
+
+    /* Border: size style color / Entre el padding y el margin */
+    border: 4px solid gray;
+    /* border-bottom: 10px dotted black; */
+
+    /* Margin */
+    /* A los 4 lados */
+    /* margin: 40px; */
+    /* Para cada uno de los lados */
+    /* margin-top: ;
+    margin-right: ;
+    margin-bottom: ;
+    margin-left: ; */
+    /* Vertical y horizontal */
+    /* margin: 40px 60px; */
+    /* Sentido horario */
+    /* margin: 40px 60px 20px 18px; */
+}
+
+.tu-vida {
+    /* Relleno no se separa de las otras cajas*/
+    padding: 180px;
+    /* Separarse de las otras cajas */
+    margin: 140px;
+}
+
+
+

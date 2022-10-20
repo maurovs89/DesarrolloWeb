@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Position relative / mover los elementos en relación con el lugar en el que normalmente aparecerian.  */
+
+.item-relative {
+    position: relative;
+    /* Coordenadas - top right bottom left */
+    top: 40px;
+    left: 40px;
+}
+
+
+.item-absolute {
+    position: absolute;
+    /* Desplazamiento lo basa en los lados de la ventana */
+    top: 40px;
+    left: 40px;
+}
+
+.item-fixed {
+    position: fixed;
+    /* Fijo en una posición */
+    bottom: 0;
+    right: 0;
+}
+
+.item-sticky {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* Cuando usamos position tambien tenemos que ajustar los planos */
